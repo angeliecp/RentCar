@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Login Admin</title>
+<link rel="stylesheet" href="../Css/estilos.css">
+</head>
+
+<body class="login-body">
+
+<div class="login-box">
+
+<h2>AutoRent Gomez</h2>
+
+<form id="loginForm">
+
+<input type="text" id="user" placeholder="Usuario" required>
+
+<input type="password" id="pass" placeholder="Contraseña" required>
+
+<button type="submit">Entrar</button>
+
+<p id="errorLogin"></p>
+
+</form>
+
+</div>
+
+<script>
+
+document.getElementById("loginForm").addEventListener("submit",function(e){
+
+e.preventDefault()
+
+let user=document.getElementById("user").value
+let pass=document.getElementById("pass").value
+
+if(user==="admin" && pass==="1234"){
+localStorage.setItem("admin","true")
+window.location="admin.html"
+}else{
+document.getElementById("errorLogin").innerText="Usuario o contraseña incorrectos ❌"
+}
+
+})
+
+</script>
+
+</body>
+</html>
