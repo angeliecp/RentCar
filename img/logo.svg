@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60">
-  <rect width="180" height="60" fill="#1e2a38"></rect>
-  <text x="20" y="38" font-size="22" fill="white" font-family="Arial" font-weight="bold">
-    AutoRent
-  </text>
-  <text x="110" y="38" font-size="22" fill="#ff9800" font-family="Arial" font-weight="bold">
-    Gómez
-  </text>
-</svg>
