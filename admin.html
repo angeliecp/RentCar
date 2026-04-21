@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Panel Admin</title>
+    <link rel="stylesheet" href="./Css/estilos.css">
+</head>
+
+<body>
+
+    <div class="admin-panel">
+
+        <div class="admin-header">
+
+
+            <center>
+                <h2>Panel Administrador</h2>
+            </center>
+
+            <button onclick="logout()">Cerrar sesión</button>
+        </div>
+
+        <div id="estadisticasAdmin"></div>
+        <br>
+        <center>
+            <h3>Autos disponibles</h3>
+
+        </center>
+
+        <br>
+        <table id="tablaAutos">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <br>
+
+        <center>
+            <h3>Reservas realizadas</h3>
+        </center>
+
+        <div class="table-container">
+
+            <br>
+            <table id="tablaReservasAdmin">
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Auto</th>
+                        <th>Días</th>
+                        <th>Total</th>
+                        <th>Fecha Inicio - Fin</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <center>
+            <h3>Agregar Auto</h3>
+        </center>
+
+        <div class="form-container">
+            <form id="formAuto">
+
+                <input type="text" id="nombreAuto" placeholder="Nombre" required>
+                <input type="number" id="precioAuto" placeholder="Precio" required>
+                <input type="number" id="stockAuto" placeholder="Cantidad" required>
+
+                <input type="file" id="fotoAuto" accept="image/*">
+
+                <button class="btn">Agregar Auto</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./Js/autosData.js"></script>
+    <script src="./Js/admin.js"></script>
+
+</body>
+
+</html>
